@@ -7,7 +7,7 @@ public class Group {
         this.numberOfParticipants = numberOfParticipants;
     }
 
-}
+
     public String getName() {
         return name;
     }

@@ -10,7 +10,7 @@ public class WhatsappRepository {
     private HashMap<Message, User> senderMap;
     private HashMap<Group, User> adminMap;
     private HashSet<String> userMobile;
-    private HashMap<String, User> userData;
+    private static HashMap<String, User> userData;
     private int customGroupCount;
     private int messageId;
 
@@ -24,9 +24,9 @@ public class WhatsappRepository {
         this.customGroupCount = 0;
         this.messageId = 0;
     }
-}
 
-    public boolean isNewUser(String mobile) {
+
+    public  boolean isNewUser(String mobile) {
         if(userData.containsKey(mobile)) return false;
         return true;
     }
